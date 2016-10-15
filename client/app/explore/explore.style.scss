@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "SeruffBold";
+    src: url("assets/css/SeruffBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "SeruffLight";
+    src: url("assets/css/SeruffLight.woff") format("woff");
+}
+
+#group-heading {
+    color: #246f79;
+}
+.question-group-heading,
+.modal-title {
+   
+}
+#question-selector-wrapper {
+    width: 70%;
+    margin: auto;
+}
+
+#chart-comp-wrapper {
+    width: 70%;
+}
+
+#viz-widgets {
+    margin-top: 30px;
+}
+
+#demog-selector {
+    margin-left: 7%;
+}
+#year-label {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+#header {
+    padding: 30px;
+    background: white;
+    box-shadow: 1px 1px 5px #888888;
+
+    #banner-wrapper {
+        .main {
+            font-family: SeruffBold;
+        }
+        .secondary {
+            color:#db1400;
+            text-decoration: underline;
+        }
+    }
+}
+
+footer {
+    font-size: 16px;
+    font-style: italic;
+    margin: 50px;
+}
