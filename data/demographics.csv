@@ -2,8 +2,8 @@ code,nice,text,0,1,2,3,4,5,6,7,8,9,2009,2010,2011,2012,2013,2014SP,2014FA,2015,S
 gender,Gender,Gender of respondent,,Male,Female,,,,,,,,x,x,x,x,x,x,x,x,x,x
 Generation,Generation,Generation fit within,Refused,Greatest Generation (<1946),Baby Boomers (1947-1964),Generation X (1965-1983),Millennials (1984-2004),,,,,,x,x,,,,,,,,x
 education,Education,What is the last level of education you have completed?,,Less than high school,High school,Some college,Associate's degree,Bachelor's degree,Graduate or professional degree,Don't know,,,x,x,x,x,x,x,x,x,x,x
-party_aff,Political Party,"Generally speaking do you usually think of yourself as a Republican, a Democrat, or an Independent?",,Democrat,Independent,Republican,,,,,,Other/Don't know/No response,x,x,x,x,x,x,x,x,x,X
-ideology,Ideology,"Generally speaking in politics today, do you consider yourself liberal, moderate, or conservative?",,Liberal,Moderate,Conservative,,,,,,Don't know/No response,N/A,x,x,x,x,x,x,x,x,x
+party_aff,Political Party,"Generally speaking do you usually think of yourself as a Republican, a Democrat, or an Independent?",,Democrat,Independent,Republican,,,,,,Don't know/Other,x,x,x,x,x,x,x,x,x,X
+ideology,Ideology,"Generally speaking in politics today, do you consider yourself liberal, moderate, or conservative?",,Liberal,Moderate,Conservative,,,,,,Don't know/Other,N/A,x,x,x,x,x,x,x,x,x
 rac_eth,Race,Racial or ethnic group,,White,Black,Other,,,,Refused,,,x,x,x,x,x,x,x,x,x,x
 area,Location,Geographic area of residence,,Chicago City,Chicago Suburbs,Downstate,,,,,,,x,x,x,x,x,x,x,x,x,x
-hhinc,Income,Rough estimate of household income in the past year,,Under $50k,$50k-$99kk,$100k-$150k,$150k+,,,,,Other/DK/Refused,x,x,x,x,x,x,x,x,x,x
+hhinc,Income,Rough estimate of household income in the past year,,Under $50k,$50k-$99kk,$100k-$150k,$150k+,,,,,Don't know/Other,x,x,x,x,x,x,x,x,x,x
