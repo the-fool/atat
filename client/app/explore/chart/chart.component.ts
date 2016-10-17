@@ -220,8 +220,10 @@ export class ChartComponent implements OnChanges {
       } else if (this.questionData.demog !== 'any') {
         // Bar chart
         // Individual year, individual demog
-        this.responseOpts = [];
+        this.year = this.year === 'all' ? keys(this.questionData.responses)[0] : this.year;
 
+        this.responseOpts = [];
+        console.log(this.year);
         const valuesByDemog = this._getValuesGroupedByDemog(this.questionData.responses[this.year].values);
         const demogDict = this._getDemogDict(this.questionData);
         this.data = map(
