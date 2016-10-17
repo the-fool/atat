@@ -7,19 +7,21 @@
 <title>attacus ATLAS | insight and design</title>
 <!-- Load CSS -->
 <link href="https://fonts.googleapis.com/css?family=Bentham" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
 <link href="{% static "css/style.css" %}" rel="stylesheet" type="text/css" />
 <link href="{% static "css/mystyle.css" %}" rel="stylesheet" type="text/css"/>
 <!-- Load Icon Font -->
 <link href="{% static "css/webfont.css" %}" rel="stylesheet" type="text/css" />
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 <!-- Load jQuery library -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
 <!-- Load jCarousel js -->
-<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="{% static "js/vendor/jquery.jcarousel.js" %}"></script>
 <!-- Load MixItUup js -->
-<script type="text/javascript" src="js/jquery.mixitup.js"></script>
+<script type="text/javascript" src="{% static "js/vendor/jquery.mixitup.js" %}"></script>
 <!-- Load js -->
-<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="{% static "js/custom.js" %}"></script>
 </head>
 <!-- Start Body -->
 <body>
@@ -28,7 +30,7 @@
 		<a href="#" class="logo"></a>
 		<ul class="mainmenu">
 			<li class="active"><a href="#home">Home</a></li>
-			<li><a href="http://attacusatlas.io/psppi/">PSPPI Data Visualizer</a></li>
+			<li><a target="_blank" href="http://attacusatlas.io/psppi/">PSPPI Data Visualizer</a></li>
 			<!--<li><a href="#about">About</a></li>
 			<li><a href="#portfolio">Portfolio</a></li>
 			<li><a href="#blog">Blog</a></li>
