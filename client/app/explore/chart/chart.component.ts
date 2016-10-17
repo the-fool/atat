@@ -23,13 +23,14 @@ interface ResponseOpt {
 }
 
 const COLORS = [
-  'rgb(96,143,61)',
-  'rgb(219,20,0)',
-  'rgb(253,116,0)',
-  'rgb(42,188,153)',
-  'rgb(0,67,88)',
-  'rgb(251,223,62)',
-  'rgb(151,233,213)'
+  'rgb(67,144,16)', // Green
+  'rgb(251,223,62)', // yellow
+  'rgb(219,20,0)', // red
+  'rgb(42,188,153)', // teal
+  'rgb(253,116,0)', // orange
+  'rgb(0,32,96)', // navy
+  'rgb(43,204,255)', // cyan
+  'rgb(0,0,0)'
 ];
 
 const colorFunc = (d, i) => (d.data && d.data.color) || COLORS[i % COLORS.length];
