@@ -23,12 +23,12 @@ interface ResponseOpt {
 }
 
 const COLORS = [
-  'rgb(67,144,16)', // Green
-  'rgb(251,223,62)', // yellow
-  'rgb(219,20,0)', // red
-  'rgb(42,188,153)', // teal
+  'rgb(42,188,153)', // teal  
   'rgb(253,116,0)', // orange
+  'rgb(251,223,62)', // yellow
   'rgb(0,32,96)', // navy
+  'rgb(219,20,0)', // red
+  'rgb(67,144,16)', // Green
   'rgb(43,204,255)', // cyan
   'rgb(0,0,0)'
 ];

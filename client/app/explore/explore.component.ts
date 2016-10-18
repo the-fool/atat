@@ -4,7 +4,7 @@ import { Observable, BehaviorSubject } from 'rxjs';
 import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { compose, curry, equals, find, flatten, isNil, keys, lensProp,
-    map, max, merge, prepend, prop, reduce, set, toPairs, toString, values } from 'ramda';
+    map, max, merge, prepend, prop, reduce, set, sortBy, toPairs, toString, values } from 'ramda';
 
 
 @Component({
@@ -13,7 +13,11 @@ import { compose, curry, equals, find, flatten, isNil, keys, lensProp,
         <div id="header">
             <div id="banner-wrapper">
                 <h1 class="main">Simon Poll: Illinois Statewide</h1>
-                <h4 class="secondary">Paul Simon Public Policy Institute</h4>
+                <h4 class="secondary">
+                <a href="http://paulsimoninstitute.siu.edu/" target="_blank">
+                Paul Simon Public Policy Institute
+                </a>
+                </h4>
             </div>
             <div id="subtitle">
                 <p>
@@ -55,7 +59,9 @@ import { compose, curry, equals, find, flatten, isNil, keys, lensProp,
         For more information about the methodology, look at press releases
         <a target="_blank" href="http://paulsimoninstitute.siu.edu/opinion-polls/simon-institute-poll-2016.php">
         here.</a>
-        To download the original raw data visit OpenSIUC. This visualizer does not contain all data 
+        To download the original raw data visit 
+        <a href="http://opensiuc.lib.siu.edu/ppi/" target="_blank">OpenSIUC</a>. 
+        This visualizer does not contain all data 
         collected in the Simon Institute Poll. Rather, it is an introduction to some key questions that 
         have been asked over time and their demographic trends. 
         </p>
@@ -91,11 +97,13 @@ export class ExploreComponent {
                 .map(reduce((a, i) => set(lensProp(prop<string>('code', i)), i, a), {}));
 
         // Turn the dictionary-object into a list of grouped questions
-        this.groupedQuestions$ = store.select(s => s.questions).map(qs => {
-            const parent = (grp: [string, IQuestion[]]) =>
-                ({group: grp[0], questions: grp[1]});
-            return map(parent, toPairs(qs));
-        });
+        this.groupedQuestions$ = store.select(s => s.questions)
+            .map(qs => {
+                const parent = (grp: [string, IQuestion[]]) =>
+                    ({group: grp[0], questions: grp[1]});
+                return map(parent, toPairs(qs));
+            })
+            .map(groupedQuestions => sortBy(prop('group'))(groupedQuestions));
         // for some reason, ng2-select wants an array
         this.initSelectedQuestion$ = this.questionData$.map(Array).take(1);
         this.questionOptions$ = store.select(s => s.questions).map(qs => {

@@ -11,10 +11,7 @@
 #group-heading {
     color: #246f79;
 }
-.question-group-heading,
-.modal-title {
-   
-}
+
 #question-selector-wrapper {
     width: 70%;
     margin: auto;
@@ -46,9 +43,12 @@
         .main {
             font-family: SeruffBold;
         }
-        .secondary {
+        .secondary a {
             color:#db1400;
-            text-decoration: underline;
+            &:hover {
+                color: #821308;
+                text-decoration: underline;
+            }
         }
     }
 }
