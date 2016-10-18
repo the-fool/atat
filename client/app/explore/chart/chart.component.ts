@@ -91,6 +91,8 @@ export class ChartComponent implements OnChanges {
       type: 'multiBarChart',
       height: 600,
       color: colorFunc,
+      stacked: false,
+      showControls: false,
       margin: {
         top: 20,
         right: 20,
